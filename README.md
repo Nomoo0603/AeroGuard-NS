@@ -39,7 +39,13 @@ npm run build
 npm run lint
 ```
 
-Production is a static export; no application server, Server Actions, or data collection is deployed. The scaffold includes Sites hosting support. Hosting configuration is in `.openai/hosting.json`; forks must register their own Site before deploying. No hosting credentials are committed. Public source availability does not imply the hosted Sites audience is public.
+Production is a static export; no application server, Server Actions, or data collection is deployed. Vercel deployment is configured in `vercel.json`: framework preset **Other**, build command `npm run build`, output directory `dist/client`, and install command `npm ci`. Import this GitHub repository in Vercel with Node.js 22, or deploy with:
+
+```sh
+npx vercel --prod
+```
+
+The `.openai/hosting.json` file is retained because the build scaffold imports it; no Sites credentials or server runtime are required by the deployed static page. Forks that choose Sites hosting must register their own Site before deploying there.
 
 ## Check the interface
 
