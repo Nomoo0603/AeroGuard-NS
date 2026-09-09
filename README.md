@@ -2,7 +2,7 @@
 
 **Push the flow. Guard the solve.**
 
-[Landing page](https://aeroguard-ns.nomon-erdene-lkhagva.chatgpt.site) · [Specification](docs/SPECIFICATION.md) · [C++ API](include/aeroguard_ns.hpp)
+[Landing page](https://aeroguard-ns.vercel.app) · [Specification](docs/SPECIFICATION.md) · [C++ API](include/aeroguard_ns.hpp)
 
 An open-source specification and C++ API draft for a conservative reliability layer in high-vorticity computational fluid dynamics (CFD).
 
